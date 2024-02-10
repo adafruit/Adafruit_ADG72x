@@ -2,12 +2,9 @@
  * @file Adafruit_ADG72x.cpp
  * @author Limor Fried/Ladyada
  * @brief  This is a library for the ADG728/ADG729 analog multiplexers
- * @license MIT
+ * @section license License
  *
- * This is the part of the Adafruit codebase and is licensed under
- * a MIT license.
- *
- * Please see the file called LICENSE for full details
+ * MIT License, Please see the file called LICENSE for full details
  */
 
 #include "Adafruit_ADG72x.h"
