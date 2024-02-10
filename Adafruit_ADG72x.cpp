@@ -15,8 +15,7 @@
 /*!
  *    @brief  Constructor for the ADG72x class.
  */
-Adafruit_ADG72x::Adafruit_ADG72x() {
-}
+Adafruit_ADG72x::Adafruit_ADG72x() {}
 
 /*!
  *    @brief  Begins communication with the ADG72x chip
@@ -34,9 +33,10 @@ bool Adafruit_ADG72x::begin(uint8_t i2c_addr, TwoWire *wire) {
 
 /*!
  *    @brief  Selects the channels on the ADG72x chip based on the provided bits
- *            Each bit turns on a single channel, you can have more than 1 channel
- *            enabled to connect many analog signals together!
- *    @param  bits 8-bit value representing the channels to be selected/deselected
+ *            Each bit turns on a single channel, you can have more than 1
+ * channel enabled to connect many analog signals together!
+ *    @param  bits 8-bit value representing the channels to be
+ * selected/deselected
  *    @return True if the I2C operation was successful, otherwise false.
  */
 bool Adafruit_ADG72x::selectChannels(uint8_t bits) {

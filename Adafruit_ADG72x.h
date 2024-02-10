@@ -5,7 +5,7 @@
  * ADG728 and ADG729 analog multiplexers.
  *
  * These devices use I2C to communicate, and require 2 pins (SCL+SDA)
- * Two more pins can be used for the optional address configuration, 
+ * Two more pins can be used for the optional address configuration,
  * allowing multiple devices to share the same I2C bus.
  *
  * Adafruit invests time and resources providing this open-source code,
@@ -34,7 +34,8 @@
 class Adafruit_ADG72x {
 public:
   Adafruit_ADG72x(); ///< Constructor for ADG72x class
-  bool begin(uint8_t i2c_addr, TwoWire *wire = &Wire); ///< Initializes the ADG72x
+  bool begin(uint8_t i2c_addr,
+             TwoWire *wire = &Wire); ///< Initializes the ADG72x
   bool selectChannels(uint8_t bits); ///< Selects channels based on bits
 
 private:
